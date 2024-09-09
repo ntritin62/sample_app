@@ -14,5 +14,10 @@
       <%= f.password_field :password_confirmation %>
       <%= f.submit t(".create"), class: "btn btn-primary" %>
     <% end %>
+    <p>
+      <%= t ".have_account" %>
+      <%= link_to t("login"), login_path %>
+    </p>
   </div>
+
 </div>

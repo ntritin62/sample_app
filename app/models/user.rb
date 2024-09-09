@@ -1,6 +1,7 @@
 class User < ApplicationRecord
   SIGN_UP_REQUIRE_ATTRIBUTES = %i(name email password
 password_confirmation).freeze
+  has_secure_password
   before_save :downcase_email
 
   validates :name, presence: true,
@@ -16,7 +17,16 @@ password_confirmation).freeze
             presence: true,
             length: {minimum: Settings.sign_up.min_password_length}
 
-  has_secure_password
+  class << self
+    def digest string
+      cost = if ActiveModel::SecurePassword.min_cost
+               BCrypt::Engine::MIN_COST
+             else
+               BCrypt::Engine.cost
+             end
+      BCrypt::Password.create string, cost:
+    end
+  end
 
   private
   def downcase_email
