@@ -39,6 +39,7 @@ en:
       have_account: "Already have an account?"
     create: 
       created: "User created successful"
+      check_activation_mail: "Please check your mail to activate your account"
     show: 
       not_found: "User not found!"
     edit:
@@ -58,5 +59,15 @@ en:
     create:
       successful: "Log in successful!"
       invalid: "Incorrect email or password!"
-
-
+      not_activated: "Not activated yet. Check your email to activate account"
+  user_mailer:
+    account_activation:
+      invalid_link: "Invalid activation link"
+      success: "Account activated"
+      activate: "Activate"
+      account_activation: "Account activation"
+      greeting: "Hi %{user_name}"
+      instruction: "Welcome to Sample App. Click on the link below to activate your account:"
+  account_activations:
+    success: "Account activated"
+    invalid_link: "Invalid activation link"
