@@ -5,3 +5,15 @@ en:
   help: "Help"
   title: "Ruby on Rails Tutorial Sample App"
   login: "Login"
+  the_form_contains: "The form contains"
+  error: "error"
+  users:
+    new: 
+      sign_up: "Sign up"
+      create: "Create account"
+      password_confirm: "Password confirmation"
+    create: 
+      created: "User created successful"
+    show: 
+      not_found: "User not found!"
+
