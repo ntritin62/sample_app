@@ -25,6 +25,13 @@ en:
   the_form_contains: "The form contains"
   error: "error"
   users:
+    unauthenticated: "Unauthenticated"
+    unauthorized: "Unauthorized"
+    not_found: "User not found!"
+    user:
+      delete_confirm: "Delete this user?"
+    index:
+      all_users: "All users"
     new: 
       sign_up: "Sign up"
       create: "Create account"
@@ -34,6 +41,14 @@ en:
       created: "User created successful"
     show: 
       not_found: "User not found!"
+    edit:
+      edit_info: "Edit information"
+      save_changes: "Save changes"
+    update:
+      success: "Update profile successfully"
+    destroy:
+      success: "User deleted"
+      fail: "User deteled fail"
   sessions: 
     new:
       sign_up_now!: "Sign up now!"
