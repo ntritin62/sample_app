@@ -68,6 +68,7 @@ vi:
       new_user?: "Người dùng mới?"
       password: "Mật Khẩu"
       remember_me: "Duy trì đăng nhập trên thiết bị này"
+      forgot_password: "Quên mật khẩu?"
     create:
       successful: "Đăng nhập thành công!"
       invalid: "Email hoặc mật khẩu không chính xác"
@@ -83,3 +84,26 @@ vi:
   account_activations:
     success: "Kích hoạt tài khoản thành công"
     invalid_link: "Đường dẫn không hợp lệ"
+    password_reset:
+      password_reset: "Đặt lại mật khẩu"
+      greeting: "Chào %{user_name}"
+      instruction: "Nhấn vào đường dẫn bên dưới để đặt lại mật khẩu. Đường dẫn sẽ khả dụng trong vòng %{expire_time} giờ."
+      reset: "Đặt lại mật khẩu"
+  password_resets: 
+    invalid_email: "Email không hợp lệ"
+    expired_link: "Đương dẫn đã hết hạn"
+    invalid_user: "Người dùng không hợp lệ"
+    new:
+      forgot_password: "Quên mật khẩu"
+      submit: "Gửi"
+    create:
+      invalid_user: "Người dùng không hợp lệ"
+      check_email: "Kiểm tra email để cài đặt lại mật khẩu"
+    update:
+      cannot_empty: "không được để trống"
+      reset_success: "Cài đặt lại mật khẩu thành công"
+    edit:
+      password: "Mật khẩu"
+      confirm: "Xác nhận mật khẩu"
+      submit: "Xác nhận"
+      password_reset: "Đặt lại mật khẩu"

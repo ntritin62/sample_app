@@ -7,3 +7,4 @@ sign_up:
 page_items: 10
 avatar_size: 50
 default_avatar_size: 80
+reset_expired_time: 2
