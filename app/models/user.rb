@@ -2,12 +2,13 @@ class User < ApplicationRecord
   SIGN_UP_REQUIRE_ATTRIBUTES = %i(name email password
 password_confirmation).freeze
   RESET_PARAMS = %i(password password_confirmation).freeze
-  has_secure_password
-  before_save :downcase_email
 
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  before_save :downcase_email
   before_create :create_activation_digest
+
+  has_many :microposts, dependent: :destroy
 
   validates :name, presence: true,
             length: {maximum: Settings.sign_up.max_name_length}
@@ -22,6 +23,10 @@ password_confirmation).freeze
             presence: true,
             length: {minimum: Settings.sign_up.min_password_length},
             allow_nil: true
+
+  scope :activated?, ->{where(activated: true)}
+
+  has_secure_password
 
   class << self
     def digest string
@@ -78,6 +83,10 @@ password_confirmation).freeze
 
   def password_reset_expired?
     reset_sent_at < Settings.reset_expired_time.hours.ago
+  end
+
+  def feed
+    microposts
   end
 
   private

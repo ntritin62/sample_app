@@ -8,3 +8,7 @@ page_items: 10
 avatar_size: 50
 default_avatar_size: 80
 reset_expired_time: 2
+digit_140: 140
+max_upload_img_size: 5
+img_resize_limit: 500
+img_accept_format: "image/jpeg,image/gif,image/png"
