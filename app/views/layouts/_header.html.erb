@@ -1,0 +1,13 @@
+<header class="navbar-inverse navbar-fixed-top navbar">
+  <div class="container">
+    <%= link_to "sample app", "/", id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t(:home), root_path(locale: I18n.locale) %></li>
+        <li><%= link_to t(:contact), static_pages_contact_path(locale: I18n.locale) %></li>
+        <li><%= link_to t(:help), static_pages_help_path(locale: I18n.locale) %></li>
+        <li><%= link_to t(:login), "#" %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

@@ -1,4 +1,5 @@
 ## Checklist tự review pull trước khi ready nhờ trainer review
+
 - [ ] Kiểm tra mỗi pull request 1 commit, nếu nhiều commit thì hãy gộp commit thành 1 rồi đẩy lại lên git
 - [ ] Trong các file của rails (đuôi .erb, .rb, .yml): sử dụng nháy " thay vì nháy '
 - [ ] Trong file javascript: sử dụng nháy ' thay vì "
@@ -11,18 +12,21 @@
 - [ ] Tham khảo coding convention https://github.com/framgia/coding-standards/blob/master/vn/README.md
 
 ## Related Tickets
+
 - ticket redmine
 
 ## WHAT (optional)
+
 - Change number items `completed/total` in admin page.
 
 ## HOW
+
 - I edit js file, inject not_vary_normal items in calculate function.
 
 ## WHY (optional)
+
 - Because in previous version - number just depends on `normal` items. But in new version, we have `state` and `confirm_state` depends on both `normal` + `not_normal` items.
 
 ## Evidence (Screenshot or Video)
-
 
 ## Notes (Kiến thức tìm hiểu thêm)
