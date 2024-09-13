@@ -1,0 +1,5 @@
+sign_up: 
+  email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  max_email_length: 255
+  max_name_length: 50
+  min_password_length: 6
