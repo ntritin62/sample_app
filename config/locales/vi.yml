@@ -3,5 +3,27 @@ vi:
   contact: "Liên lạc"
   greeting: "Xin chào"
   help: "Giúp đỡ"
+  product: "Sản phẩm"
+  name: "Tên"
+  the_form_contains: "Biểu mẫu này có"
+  error: "lỗi"
   title: "Hướng dẫn Ruby on Rails Ứng dụng mẫu"
   login: "Đăng nhập"
+  users:
+    new:
+      sign_up: "Đăng ký"
+      create: "Tạo tài khoản"
+      password_confirm: "Xác nhận mật khẩu"
+    create:
+      created: "Tạo tài khoản thành công"
+    show: 
+      not_found: "Không tìm thấy người dùng!"
+  activerecord:
+    models:
+      user: "Người dùng"
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật Khẩu"
+        password_confirmation: "Mật khẩu xác nhận"
