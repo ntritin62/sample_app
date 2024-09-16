@@ -1,8 +1,25 @@
 en:
-  home: "Home"
-  contact: "Contact"
-  greeting: "Hello"
-  help: "Help"
+  layouts:
+    header:
+      logo: "Sample App"
+      home: "Trang chủ"
+      contact: "Liên lạc"
+      account: "Tài khoản"
+      help: "Help"
+      profile: "Hồ sơ"
+      setting: "Cài đặt"
+      log_out: "Đăng xuất"
+      log_out_confirm: "Bạn có chắc không?"
+      log_in: "Đăng nhập"
+    language:
+      choose_lang: "Choose language"
+  static_pages: 
+    home:
+      home: "Home"
+    contact: 
+      contact: "Contact"
+    help:
+      help: "Help"
   title: "Ruby on Rails Tutorial Sample App"
   login: "Login"
   the_form_contains: "The form contains"
@@ -12,8 +29,18 @@ en:
       sign_up: "Sign up"
       create: "Create account"
       password_confirm: "Password confirmation"
+      have_account: "Already have an account?"
     create: 
       created: "User created successful"
     show: 
       not_found: "User not found!"
+  sessions: 
+    new:
+      sign_up_now!: "Sign up now!"
+      new_user?: "New user?"
+      password: "Mật khẩu"
+    create:
+      successful: "Log in successful!"
+      invalid: "Incorrect email or password!"
+
 

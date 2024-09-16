@@ -1,10 +1,25 @@
 vi:
-  home: "Trang chủ"
-  contact: "Liên lạc"
-  greeting: "Xin chào"
-  help: "Giúp đỡ"
-  product: "Sản phẩm"
-  name: "Tên"
+  layouts:
+    header:
+      logo: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      contact: "Liên lạc"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      help: "Giúp đỡ"
+      setting: "Cài đặt"
+      log_out: "Đăng xuất"
+      log_out_confirm: "Bạn có chắc không?"
+      log_in: "Đăng nhập"
+    language:
+      choose_lang: "Chọn ngôn ngữ"
+  static_pages: 
+    home:
+      home: "Trang chủ"
+    contact: 
+      contact: "Liên lạc"
+    help:
+      help: "Giúp đỡ"
   the_form_contains: "Biểu mẫu này có"
   error: "lỗi"
   title: "Hướng dẫn Ruby on Rails Ứng dụng mẫu"
@@ -14,6 +29,7 @@ vi:
       sign_up: "Đăng ký"
       create: "Tạo tài khoản"
       password_confirm: "Xác nhận mật khẩu"
+      have_account: "Đã có tài khoản?"
     create:
       created: "Tạo tài khoản thành công"
     show: 
@@ -27,3 +43,11 @@ vi:
         email: "Email"
         password: "Mật Khẩu"
         password_confirmation: "Mật khẩu xác nhận"
+  sessions: 
+    new:
+      sign_up_now!: "Đăng ký ngay!"
+      new_user?: "Người dùng mới?"
+      password: "Mật Khẩu"
+    create:
+      successful: "Đăng nhập thành công!"
+      invalid: "Email hoặc mật khẩu không chính xác"
