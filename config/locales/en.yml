@@ -2,15 +2,15 @@ en:
   layouts:
     header:
       logo: "Sample App"
-      home: "Trang chủ"
-      contact: "Liên lạc"
-      account: "Tài khoản"
+      home: "Home"
+      contact: "Contact"
+      account: "Account"
       help: "Help"
-      profile: "Hồ sơ"
-      setting: "Cài đặt"
-      log_out: "Đăng xuất"
-      log_out_confirm: "Bạn có chắc không?"
-      log_in: "Đăng nhập"
+      profile: "Profile"
+      setting: "Setting"
+      log_out: "Log out"
+      log_out_confirm: "Are you sure?"
+      log_in: "Login"
     language:
       choose_lang: "Choose language"
   static_pages: 
@@ -39,6 +39,7 @@ en:
       sign_up_now!: "Sign up now!"
       new_user?: "New user?"
       password: "Mật khẩu"
+      remember_me: "Remember me on this device"
     create:
       successful: "Log in successful!"
       invalid: "Incorrect email or password!"
