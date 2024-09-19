@@ -1,0 +1,4 @@
+<h1>Sample App</h1>
+<p><%= t ".greeting", deep_interpolation: true, user_name: @user.name %>, </p>
+<p><%= t ".instruction" %></p>
+<%= link_to t(".activate"), edit_account_activation_url(id: @user.activation_token, email: @user.email) %>

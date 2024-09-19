@@ -41,6 +41,7 @@ vi:
       have_account: "Đã có tài khoản?"
     create:
       created: "Tạo tài khoản thành công"
+      check_activation_mail: "Xin hãy kiểm tra email của bạn để kích hoạt tài khoản"
     show: 
       not_found: "Không tìm thấy người dùng!"
     edit:
@@ -70,3 +71,15 @@ vi:
     create:
       successful: "Đăng nhập thành công!"
       invalid: "Email hoặc mật khẩu không chính xác"
+      not_activated: "Tài khoản chưa kích hoạt. Vui lòng kiểm tra email để kích hoạt tài khoản"
+  user_mailer:
+    account_activation:
+      invalid_link: "Đường dẫn không hợp lệ"
+      success: "Kích hoạt tài khoản thành công"
+      account_activation: "Kích hoạt tài khoản"
+      greeting: "Chào %{user_name}"
+      instruction: "Chào mừng đến với Sample App. Nhấn vào đường dẫn bên dưới để kích hoạt tài khoản của bạn:"
+      activate: "Kích hoạt"
+  account_activations:
+    success: "Kích hoạt tài khoản thành công"
+    invalid_link: "Đường dẫn không hợp lệ"
