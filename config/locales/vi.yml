@@ -11,6 +11,7 @@ vi:
       log_out: "Đăng xuất"
       log_out_confirm: "Bạn có chắc không?"
       log_in: "Đăng nhập"
+      users: "Tất cả người dùng"
     language:
       choose_lang: "Chọn ngôn ngữ"
   static_pages: 
@@ -25,6 +26,14 @@ vi:
   title: "Hướng dẫn Ruby on Rails Ứng dụng mẫu"
   login: "Đăng nhập"
   users:
+    unauthenticated: "Vui lòng đăng nhập"
+    unauthorized: "Bạn không có quyền truy cập vào trang này"
+    not_found: "Không tìm thấy người dùng!"
+    user:
+      delete: "Xóa"
+      delete_confirm: "Xóa người dùng này?"
+    index:
+      all_users: "Tất cả người dùng"
     new:
       sign_up: "Đăng ký"
       create: "Tạo tài khoản"
@@ -34,6 +43,15 @@ vi:
       created: "Tạo tài khoản thành công"
     show: 
       not_found: "Không tìm thấy người dùng!"
+    edit:
+      edit_info: "Cập nhật thông tin"
+      save_changes: "Lưu thay đổi"
+      change: "Thay đổi"
+    update:
+      success: "Cập nhật thông tin thành công"
+    destroy:
+      success: "Người dùng đã được xóa"
+      fail: "Xoá người dùng không thành công"
   activerecord:
     models:
       user: "Người dùng"

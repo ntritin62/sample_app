@@ -7,11 +7,12 @@ class SessionsController < ApplicationController
       flash.now[:danger] = t ".invalid"
       return render :new, status: :unprocessable_entity
     end
+
     params.dig(:session, :remember_me) == "1" ? remember(@user) : forget(@user)
+    forwarding_url = session[:forwarding_url]
     reset_session
     log_in @user
-    flash[:success] = t ".successful"
-    redirect_to @user
+    redirect_to forwarding_url || @user
   end
 
   def destroy

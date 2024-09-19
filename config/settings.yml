@@ -3,3 +3,7 @@ sign_up:
   max_email_length: 255
   max_name_length: 50
   min_password_length: 6
+
+page_items: 10
+avatar_size: 50
+default_avatar_size: 80

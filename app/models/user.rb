@@ -16,7 +16,8 @@ password_confirmation).freeze
 
   validates :password,
             presence: true,
-            length: {minimum: Settings.sign_up.min_password_length}
+            length: {minimum: Settings.sign_up.min_password_length},
+            allow_nil: true
 
   class << self
     def digest string
