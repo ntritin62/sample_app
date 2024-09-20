@@ -1,10 +1,11 @@
 class User < ApplicationRecord
   SIGN_UP_REQUIRE_ATTRIBUTES = %i(name email password
 password_confirmation).freeze
+  RESET_PARAMS = %i(password password_confirmation).freeze
   has_secure_password
   before_save :downcase_email
 
-  attr_accessor :remember_token, :activation_token
+  attr_accessor :remember_token, :activation_token, :reset_token
 
   before_create :create_activation_digest
 
@@ -63,6 +64,20 @@ password_confirmation).freeze
 
   def send_activation_email
     UserMailer.account_activation(self).deliver_now
+  end
+
+  def create_reset_digest
+    self.reset_token = User.new_token
+    update_columns reset_digest: User.digest(reset_token),
+                   reset_sent_at: Time.zone.now
+  end
+
+  def send_password_reset_email
+    UserMailer.password_reset(self).deliver_now
+  end
+
+  def password_reset_expired?
+    reset_sent_at < Settings.reset_expired_time.hours.ago
   end
 
   private

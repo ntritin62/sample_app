@@ -56,6 +56,7 @@ en:
       new_user?: "New user?"
       password: "Mật khẩu"
       remember_me: "Remember me on this device"
+      forgot_password: "Forgot password?"
     create:
       successful: "Log in successful!"
       invalid: "Incorrect email or password!"
@@ -71,3 +72,21 @@ en:
   account_activations:
     success: "Account activated"
     invalid_link: "Invalid activation link"
+    password_reset:
+      password_reset: "Password reset"
+      greeting: "Hi %{user_name}"
+      instruction: "Click the link below to reset your password. The link will expire in %{expire_time} hour."
+  password_resets: 
+    invalid_email: "Invalid email"
+    new:
+      forgot_password: "Forgot password"
+      submit: "Submit"
+    create:
+      invalid_user: "Invalid user"
+      check_email: "Please check your email to reset password"
+    edit:
+      submit: "Submit"
+      password_reset: "Reset password"
+    update:
+      cannot_empty: "cannot empty"
+      reset_success: "Password reset successfully"
