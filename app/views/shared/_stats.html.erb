@@ -1,0 +1,13 @@
+<% @user ||= current_user %>
+<div class="stats">
+  <%= link_to followers_user_path(@user) do %>
+    <strong id="followers" class="stat">
+      <%= pluralize @user.followers.count, t(".follower") %>
+    </strong>
+  <% end %>
+  <%= link_to following_user_path(@user) do %>
+    <strong id="following" class="stat">
+      <%= t(".following_count", deep_interpolation: true, count: @user.following.count) %>
+    </strong>
+  <% end %>
+</div>

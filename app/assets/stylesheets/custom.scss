@@ -65,6 +65,50 @@ aside {
   margin-top: 15px;
 }
 
+.stats {
+  overflow: auto;
+  font-size: 16px;
+  margin: 0;
+  clear: left;
+  a {
+    float: left;
+    padding: 0 10px;
+    border-left: 1px solid $grey;
+    color: $grey;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 15px;
+  .gravatar {
+    margin: 3px 3px;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+  a {
+    padding: 0;
+    border: none;
+  }
+}
+
+.users.follow {
+  padding: 0;
+}
+
+
 input,
 textarea,
 select,
