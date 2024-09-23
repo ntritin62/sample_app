@@ -1,13 +1,16 @@
 class UsersController < ApplicationController
-  before_action :find_user, except: %i(index new create)
+  before_action :find_user, only: %i(show edit update destroy)
   before_action :logged_in_user, only: %i(index show edit update destroy)
   before_action :correct_user, only: %i(show edit update)
   before_action :admin_user, only: :destroy
 
-  def show; end
+  def show
+    @pagy, @microposts = pagy @user.microposts,
+                              items: Settings.page_items
+  end
 
   def index
-    @pagy, @users = pagy User.all, items: Settings.page_items
+    @pagy, @users = pagy User.activated?, items: Settings.page_items
   end
 
   def new
@@ -65,14 +68,6 @@ class UsersController < ApplicationController
 
     flash[:danger] = t ".unauthorized"
     redirect_to current_user, status: :see_other
-  end
-
-  def logged_in_user
-    return if logged_in?
-
-    flash[:danger] = t ".unauthenticated"
-    store_location
-    redirect_to login_path, status: :see_other
   end
 
   def admin_user

@@ -17,18 +17,29 @@ vi:
   static_pages: 
     home:
       home: "Trang chủ"
+      micropost_feed: "Bài viết gần đây"
     contact: 
       contact: "Liên lạc"
     help:
       help: "Giúp đỡ"
-  the_form_contains: "Biểu mẫu này có"
-  error: "lỗi"
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu này có"
+      error: "lỗi"
+    micropost_form:
+      compose_new: "Tạo bài viết mới..."
+      post: "Đăng"
+    user_info:
+      view_profile: "Xem trang cá nhân"
+      micropost: "bài viết"
   title: "Hướng dẫn Ruby on Rails Ứng dụng mẫu"
   login: "Đăng nhập"
   users:
     unauthenticated: "Vui lòng đăng nhập"
     unauthorized: "Bạn không có quyền truy cập vào trang này"
     not_found: "Không tìm thấy người dùng!"
+    show:
+      total_microposts: "Tổng bài viết (%{total})"
     user:
       delete: "Xóa"
       delete_confirm: "Xóa người dùng này?"
@@ -56,12 +67,16 @@ vi:
   activerecord:
     models:
       user: "Người dùng"
+      micropost: "Bài viết"
     attributes:
       user:
         name: "Tên"
         email: "Email"
         password: "Mật Khẩu"
         password_confirmation: "Mật khẩu xác nhận"
+      micropost:
+        content: "Nội dung"
+        image: "Ảnh"
   sessions: 
     new:
       sign_up_now!: "Đăng ký ngay!"
@@ -81,14 +96,14 @@ vi:
       greeting: "Chào %{user_name}"
       instruction: "Chào mừng đến với Sample App. Nhấn vào đường dẫn bên dưới để kích hoạt tài khoản của bạn:"
       activate: "Kích hoạt"
-  account_activations:
-    success: "Kích hoạt tài khoản thành công"
-    invalid_link: "Đường dẫn không hợp lệ"
     password_reset:
       password_reset: "Đặt lại mật khẩu"
       greeting: "Chào %{user_name}"
       instruction: "Nhấn vào đường dẫn bên dưới để đặt lại mật khẩu. Đường dẫn sẽ khả dụng trong vòng %{expire_time} giờ."
       reset: "Đặt lại mật khẩu"
+  account_activations:
+    success: "Kích hoạt tài khoản thành công"
+    invalid_link: "Đường dẫn không hợp lệ"
   password_resets: 
     invalid_email: "Email không hợp lệ"
     expired_link: "Đương dẫn đã hết hạn"
@@ -107,3 +122,14 @@ vi:
       confirm: "Xác nhận mật khẩu"
       submit: "Xác nhận"
       password_reset: "Đặt lại mật khẩu"
+  microposts:
+    create:
+      success: "Đăng bài viết thành công!"
+    destroy:
+      success: "Xóa bài viết thành công!"
+    micropost:
+      posted_ago: "Đã đăng %{times} trước"
+      delete: "Xóa bài viết"
+      delete_confirm: "Bạn có chắc là muốn xóa bài viết?"
+  alert:
+    too_large_img_size: "Kích thước ảnh quá lớn (> 5MB)"

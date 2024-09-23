@@ -20,6 +20,13 @@ en:
       contact: "Contact"
     help:
       help: "Help"
+  shared:
+    micropost_form:
+      compose_new: "Compose new micropost ..."
+      post: "Post"
+    user_info:
+      view_profile: "View my profile"
+      micropost: "micropost"
   title: "Ruby on Rails Tutorial Sample App"
   login: "Login"
   the_form_contains: "The form contains"
@@ -28,6 +35,8 @@ en:
     unauthenticated: "Unauthenticated"
     unauthorized: "Unauthorized"
     not_found: "User not found!"
+    show:
+      total_microposts: "Microposts (%{total})"
     user:
       delete_confirm: "Delete this user?"
     index:
@@ -69,13 +78,13 @@ en:
       account_activation: "Account activation"
       greeting: "Hi %{user_name}"
       instruction: "Welcome to Sample App. Click on the link below to activate your account:"
-  account_activations:
-    success: "Account activated"
-    invalid_link: "Invalid activation link"
     password_reset:
       password_reset: "Password reset"
       greeting: "Hi %{user_name}"
       instruction: "Click the link below to reset your password. The link will expire in %{expire_time} hour."
+  account_activations:
+    success: "Account activated"
+    invalid_link: "Invalid activation link"
   password_resets: 
     invalid_email: "Invalid email"
     new:
@@ -90,3 +99,14 @@ en:
     update:
       cannot_empty: "cannot empty"
       reset_success: "Password reset successfully"
+  microposts:
+    create:
+      success: "Micropost created successful!"
+    destroy:
+      success: "Micropost deleted successful!"
+    micropost:
+      posted_ago: "Posted %{times} ago"
+      delete: "Delete"
+      delete_confirm: "Are you sure to delete this micropost?"
+  alert:
+    too_large_img_size: "Image size too large (> 5MB)"

@@ -10,8 +10,10 @@ Rails.application.routes.draw do
 
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
-    resources  :users, except: %i(:new :create)
+    get "microposts", to: "home#index"
+    resources :users, except: %i(:new :create)
     resources :account_activations, only: :edit
     resources :password_resets, only: %i(new create edit update)
+    resources :microposts, only: %i(create destroy)
   end
 end
