@@ -1,4 +1,4 @@
-sign_up: 
+sign_up:
   email_regex: !ruby/regexp /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   max_email_length: 255
   max_name_length: 50
@@ -12,3 +12,4 @@ digit_140: 140
 max_upload_img_size: 5
 img_resize_limit: 500
 img_accept_format: "image/jpeg,image/gif,image/png"
+small_avatar: 40

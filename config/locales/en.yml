@@ -13,43 +13,49 @@ en:
       log_in: "Login"
     language:
       choose_lang: "Choose language"
-  static_pages: 
+  static_pages:
     home:
       home: "Home"
-    contact: 
+    contact:
       contact: "Contact"
     help:
       help: "Help"
   shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      error: "error"
     micropost_form:
       compose_new: "Compose new micropost ..."
       post: "Post"
     user_info:
       view_profile: "View my profile"
       micropost: "micropost"
+    stats:
+      following_count: "%{count} following"
+      follower: "follower"
   title: "Ruby on Rails Tutorial Sample App"
   login: "Login"
-  the_form_contains: "The form contains"
-  error: "error"
   users:
     unauthenticated: "Unauthenticated"
     unauthorized: "Unauthorized"
     not_found: "User not found!"
+    following: "Following"
+    follower: "Follower"
     show:
       total_microposts: "Microposts (%{total})"
     user:
       delete_confirm: "Delete this user?"
     index:
       all_users: "All users"
-    new: 
+    new:
       sign_up: "Sign up"
       create: "Create account"
       password_confirm: "Password confirmation"
       have_account: "Already have an account?"
-    create: 
+    create:
       created: "User created successful"
       check_activation_mail: "Please check your mail to activate your account"
-    show: 
+    show:
       not_found: "User not found!"
     edit:
       edit_info: "Edit information"
@@ -59,7 +65,14 @@ en:
     destroy:
       success: "User deleted"
       fail: "User deteled fail"
-  sessions: 
+    follow:
+      follow: "Follow"
+    unfollow:
+      unfollow: "Unfollow"
+    show_follow:
+      microposts: "Microposts"
+      view_profile: "View my profile"
+  sessions:
     new:
       sign_up_now!: "Sign up now!"
       new_user?: "New user?"
@@ -85,7 +98,7 @@ en:
   account_activations:
     success: "Account activated"
     invalid_link: "Invalid activation link"
-  password_resets: 
+  password_resets:
     invalid_email: "Invalid email"
     new:
       forgot_password: "Forgot password"
@@ -110,3 +123,9 @@ en:
       delete_confirm: "Are you sure to delete this micropost?"
   alert:
     too_large_img_size: "Image size too large (> 5MB)"
+  relationships:
+    invalid_user: "Invalid user"
+    destroy:
+      follower: "follower"
+    create:
+      follower: "follower"

@@ -14,11 +14,11 @@ vi:
       users: "Tất cả người dùng"
     language:
       choose_lang: "Chọn ngôn ngữ"
-  static_pages: 
+  static_pages:
     home:
       home: "Trang chủ"
       micropost_feed: "Bài viết gần đây"
-    contact: 
+    contact:
       contact: "Liên lạc"
     help:
       help: "Giúp đỡ"
@@ -32,12 +32,17 @@ vi:
     user_info:
       view_profile: "Xem trang cá nhân"
       micropost: "bài viết"
+    stats:
+      following_count: "%{count} đang theo dõi"
+      follower: "người theo dõi"
   title: "Hướng dẫn Ruby on Rails Ứng dụng mẫu"
   login: "Đăng nhập"
   users:
     unauthenticated: "Vui lòng đăng nhập"
     unauthorized: "Bạn không có quyền truy cập vào trang này"
     not_found: "Không tìm thấy người dùng!"
+    follower: "Người theo dõi"
+    following: "Đang theo dõi"
     show:
       total_microposts: "Tổng bài viết (%{total})"
     user:
@@ -53,7 +58,7 @@ vi:
     create:
       created: "Tạo tài khoản thành công"
       check_activation_mail: "Xin hãy kiểm tra email của bạn để kích hoạt tài khoản"
-    show: 
+    show:
       not_found: "Không tìm thấy người dùng!"
     edit:
       edit_info: "Cập nhật thông tin"
@@ -64,6 +69,13 @@ vi:
     destroy:
       success: "Người dùng đã được xóa"
       fail: "Xoá người dùng không thành công"
+    follow:
+      follow: "Theo dõi"
+    unfollow:
+      unfollow: "Hủy theo dõi"
+    show_follow:
+      microposts: "Tổng số bài viết"
+      view_profile: "Xem hồ sơ"
   activerecord:
     models:
       user: "Người dùng"
@@ -77,7 +89,7 @@ vi:
       micropost:
         content: "Nội dung"
         image: "Ảnh"
-  sessions: 
+  sessions:
     new:
       sign_up_now!: "Đăng ký ngay!"
       new_user?: "Người dùng mới?"
@@ -104,7 +116,7 @@ vi:
   account_activations:
     success: "Kích hoạt tài khoản thành công"
     invalid_link: "Đường dẫn không hợp lệ"
-  password_resets: 
+  password_resets:
     invalid_email: "Email không hợp lệ"
     expired_link: "Đương dẫn đã hết hạn"
     invalid_user: "Người dùng không hợp lệ"
@@ -133,3 +145,9 @@ vi:
       delete_confirm: "Bạn có chắc là muốn xóa bài viết?"
   alert:
     too_large_img_size: "Kích thước ảnh quá lớn (> 5MB)"
+  relationships:
+    invalid_user: "Người dùng không khả dụng"
+    destroy:
+      follower: "người theo dõi"
+    create:
+      follower: "người theo dõi"

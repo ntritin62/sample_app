@@ -1,7 +1,8 @@
 class UsersController < ApplicationController
-  before_action :find_user, only: %i(show edit update destroy)
-  before_action :logged_in_user, only: %i(index show edit update destroy)
-  before_action :correct_user, only: %i(show edit update)
+  before_action :find_user, except: %i(index new create)
+  before_action :logged_in_user,
+                except: %i(new create show)
+  before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
 
   def show
@@ -48,6 +49,18 @@ class UsersController < ApplicationController
                         t ".fail"
                       end
     redirect_to users_url, status: :see_other
+  end
+
+  def following
+    @title = t ".following"
+    @pagy, @users = pagy @user.following, items: Settings.page_items
+    render :show_follow, status: :unprocessable_entity
+  end
+
+  def followers
+    @title = t ".follower"
+    @pagy, @users = pagy @user.followers, items: Settings.page_items
+    render :show_follow, status: :unprocessable_entity
   end
 
   private
